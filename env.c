@@ -12,7 +12,7 @@ ssize_t w;
 ssize_t n;
 while (*env)
 {
-	w = write(STDOUT_FILENO, *env, strlen(*env));
+	w = write(STDOUT_FILENO, *env, _strlen(*env));
 	if (w == -1)
 		perror("Cannot write env");
 	n = write(STDOUT_FILENO, "\n", 1);
