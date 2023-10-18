@@ -31,6 +31,6 @@ int ato_int(const char *string);
 void _setenv(char **tokens);
 void _unsetenv(char **tokens);
 ssize_t _getline(char **lineptr, size_t *n, FILE *stream);
-void *_memcpy(void *dest, const void *src, size_t n);
+void* _memcpy(void* dest, const void* src, size_t n);
 
 #endif

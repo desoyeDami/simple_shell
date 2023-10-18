@@ -16,11 +16,8 @@ This project involves creating a simple shell that mimics the behavior of `/bin/
 
 - Command execution with arguments.
 - PATH handling to find and execute programs.
-- Built-in commands: exit, env, setenv, unsetenv, cd.
-- Command separators (;) and logical operators (&&, ||).
-- Alias support for defining and listing aliases.
+- Built-in commands: exit, env, setenv, unsetenv.
 - Variable replacement for $? (exit status) and $$ (process ID).
-- Handling of comments (#) within commands.
 - Interactive and non-interactive modes.
 - Reading commands from files as input.
 
@@ -61,21 +58,6 @@ $ exit
 $ env
 $ setenv VARIABLE VALUE
 $ unsetenv VARIABLE
-$ cd DIRECTORY
-```
-
-Execute multiple commands with separators:
-```shell
-$ ls /var ; ls /tmp
-$ ls /var && ls /tmp
-$ ls /var || ls /tmp
-```
-
-Define and use aliases:
-```shell
-$ alias name='value'
-$ alias
-$ name
 ```
 
 Variable replacement:
